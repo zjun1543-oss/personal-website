@@ -2,29 +2,48 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="min-h-[80vh] flex items-center justify-center">
-      <div className="container-custom text-center">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in" style={{ color: 'var(--morandi-charcoal)' }}>
-          Hi, 我是 JUN，欢迎来到 MySpace
-        </h1>
-        <p className="text-xl md:text-2xl mb-6 max-w-2xl mx-auto" style={{ color: 'var(--morandi-warm-gray)' }}>
-          探索心理学、美食与运动的个人空间
-        </p>
-        <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: 'var(--morandi-warm-gray)' }}>
-          在这里，我分享关于内心成长、烹饪乐趣和运动健康的思考与实践
-        </p>
-        <div className="mb-12 px-8 py-6 max-w-2xl mx-auto rounded-2xl" style={{ backgroundColor: 'var(--morandi-sage)', color: 'var(--morandi-charcoal)' }}>
-          <p className="text-xl md:text-2xl font-serif italic">
-            "一个不会画画的心理学爱好者，不是一个好厨子。"
+    <section className="min-h-[60vh] flex items-center justify-center bg-white">
+      <div className="container-custom">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* 日期标签 */}
+          <div className="mb-6">
+            <span className="text-sm font-medium tracking-wider uppercase" style={{ color: '#999' }}>
+              My Personal Space
+            </span>
+          </div>
+
+          {/* 主标题 */}
+          <h1 className="text-6xl md:text-8xl font-normal mb-8" style={{ color: '#000', fontFamily: 'Georgia, serif' }}>
+            Hi, 我是 JUN
+          </h1>
+
+          {/* 副标题 */}
+          <p className="text-2xl md:text-3xl text-gray-600 mb-12 font-light">
+            探索心理学、美食与运动的世界
           </p>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="#sections" className="btn-primary">
-            开始探索
-          </Link>
-          <Link href="/psychology" className="btn-secondary">
-            阅读文章
-          </Link>
+
+          {/* 个人简介卡片 */}
+          <div className="bg-gray-50 rounded-2xl p-10 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'Georgia, serif', color: '#333' }}>
+              "一个不会画画的心理学爱好者，不是一个好厨子。"
+            </p>
+          </div>
+
+          {/* 按钮 */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="#sections"
+              className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full text-lg font-medium hover:bg-gray-800 transition-colors"
+            >
+              开始探索
+            </Link>
+            <Link
+              href="/psychology"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-black text-black rounded-full text-lg font-medium hover:bg-black hover:text-white transition-colors"
+            >
+              阅读文章
+            </Link>
+          </div>
         </div>
       </div>
     </section>

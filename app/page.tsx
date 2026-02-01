@@ -27,17 +27,22 @@ const sections = [
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-white">
       <Hero />
 
       {/* Sections Grid */}
-      <section id="sections" className="py-20">
+      <section id="sections" className="py-24 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4" style={{ color: 'var(--morandi-charcoal)' }}>
+          <div className="text-center mb-20">
+            <div className="mb-6">
+              <span className="text-xs font-semibold tracking-wider uppercase" style={{ color: '#999' }}>
+                Explore
+              </span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-normal mb-6" style={{ fontFamily: 'Georgia, serif', color: '#000' }}>
               探索三大板块
             </h2>
-            <p className="text-lg" style={{ color: 'var(--morandi-warm-gray)' }}>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               每个板块都包含丰富的文章和实用工具
             </p>
           </div>
@@ -50,41 +55,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Highlights */}
-      <section className="py-20 bg-white/50">
+      {/* About Section */}
+      <section className="py-24 bg-gray-50">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4" style={{ color: 'var(--morandi-charcoal)' }}>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <span className="text-xs font-semibold tracking-wider uppercase" style={{ color: '#999' }}>
+                About
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-normal mb-8" style={{ fontFamily: 'Georgia, serif', color: '#000' }}>
               关于这个网站
             </h2>
-            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--morandi-warm-gray)' }}>
+            <p className="text-xl text-gray-600 leading-relaxed mb-12">
               这是一个记录我个人成长的地方。在这里，我分享对心理学、美食和运动的热爱。
               每个板块都有精心设计的互动工具，希望对你有所帮助。
             </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--morandi-sage)' }}>
-                10+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-2xl p-8">
+                <div className="text-5xl font-bold mb-3" style={{ color: '#9CAF88' }}>
+                  10+
+                </div>
+                <div className="text-gray-600">心理学文章</div>
               </div>
-              <div style={{ color: 'var(--morandi-warm-gray)' }}>心理学文章</div>
-            </div>
-            <div className="p-6">
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--morandi-dusty-rose)' }}>
-                20+
+              <div className="bg-white rounded-2xl p-8">
+                <div className="text-5xl font-bold mb-3" style={{ color: '#C4A484' }}>
+                  20+
+                </div>
+                <div className="text-gray-600">美食食谱</div>
               </div>
-              <div style={{ color: 'var(--morandi-warm-gray)' }}>美食食谱</div>
-            </div>
-            <div className="p-6">
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--morandi-slate-blue)' }}>
-                15+
+              <div className="bg-white rounded-2xl p-8">
+                <div className="text-5xl font-bold mb-3" style={{ color: '#8B9DC3' }}>
+                  15+
+                </div>
+                <div className="text-gray-600">运动指南</div>
               </div>
-              <div style={{ color: 'var(--morandi-warm-gray)' }}>运动指南</div>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
