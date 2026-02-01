@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="min-h-[80vh] flex items-center justify-center">
       <div className="container-custom text-center">
         <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in" style={{ color: 'var(--morandi-charcoal)' }}>
-          欢迎来到 MySpace
+          Hi, 我是 JUN，欢迎来到 MySpace
         </h1>
         <p className="text-xl md:text-2xl mb-6 max-w-2xl mx-auto" style={{ color: 'var(--morandi-warm-gray)' }}>
           探索心理学、美食与运动的个人空间
