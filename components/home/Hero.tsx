@@ -38,34 +38,18 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="#sections"
-              className="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-800 rounded-full text-lg font-medium transition-all shadow-2xl hover:shadow-3xl hover:-translate-y-1 hover:scale-105"
+              className="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-800 rounded-full text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:scale-105"
               style={{
                 boxShadow: '0 10px 30px rgba(0,0,0,0.2), inset 0 -2px 10px rgba(0,0,0,0.1)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.3), inset 0 -2px 10px rgba(0,0,0,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2), inset 0 -2px 10px rgba(0,0,0,0.1)';
               }}
             >
               开始探索
             </Link>
             <Link
               href="/psychology"
-              className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-white text-white rounded-full text-lg font-medium transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:scale-105"
+              className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-white text-white rounded-full text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white hover:text-gray-800"
               style={{
                 boxShadow: '0 8px 25px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.95)';
-                e.currentTarget.style.color = '#1f2937';
-                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0,0,0,0.25), inset 0 -2px 10px rgba(0,0,0,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.boxShadow = '0 8px 25px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2)';
               }}
             >
               阅读文章
