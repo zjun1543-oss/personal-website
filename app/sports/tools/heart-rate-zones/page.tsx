@@ -84,7 +84,7 @@ export default function HeartRateZonesPage() {
                 <div className="flex justify-between items-center p-4 rounded-lg" style={{ backgroundColor: '#dcfce7' }}>
                   <div>
                     <div className="font-medium" style={{ color: 'var(--morandi-charcoal)' }}>有氧运动</div>
-                    <div className="text-sm" style={{ color: 'var(--morandi-warm-gray)' }>中等强度，增强心肺</div>
+                    <div className="text-sm" style={{ color: 'var(--morandi-warm-gray)' }}>中等强度，增强心肺</div>
                   </div>
                   <div className="text-lg font-bold" style={{ color: 'var(--morandi-sage)' }}>
                     {result.cardio.min}-{result.cardio.max} bpm
