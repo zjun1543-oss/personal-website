@@ -3,11 +3,6 @@
 import { useState } from 'react';
 import { calculateHeartRateZones } from '@/lib/tools';
 
-export const metadata = {
-  title: '心率区间 - MySpace',
-  description: '计算最佳运动心率区间',
-};
-
 export default function HeartRateZonesPage() {
   const [age, setAge] = useState('');
   const [result, setResult] = useState<ReturnType<typeof calculateHeartRateZones> | null>(null);
