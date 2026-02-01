@@ -73,7 +73,7 @@ export default function HeartRateZonesPage() {
 
                 <div className="flex justify-between items-center p-4 rounded-lg" style={{ backgroundColor: '#e0f2fe' }}>
                   <div>
-                    <div className="font-medium" style={{ color: 'var(--morandi-charcoal)' }>脂肪燃烧</div>
+                    <div className="font-medium" style={{ color: 'var(--morandi-charcoal)' }}>脂肪燃烧</div>
                     <div className="text-sm" style={{ color: 'var(--morandi-warm-gray)' }}>低强度，适合减脂</div>
                   </div>
                   <div className="text-lg font-bold" style={{ color: 'var(--morandi-slate-blue)' }}>
