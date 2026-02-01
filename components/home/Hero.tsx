@@ -47,8 +47,9 @@ export default function Hero() {
             </Link>
             <Link
               href="/psychology"
-              className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-white text-white rounded-full text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white hover:text-gray-800"
+              className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-white rounded-full text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white"
               style={{
+                color: 'white',
                 boxShadow: '0 8px 25px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2)',
               }}
             >
