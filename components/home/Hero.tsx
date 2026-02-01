@@ -28,8 +28,8 @@ export default function Hero() {
           </p>
 
           {/* 个人简介卡片 */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-10 mb-12 max-w-3xl mx-auto shadow-xl">
-            <p className="text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'Georgia, serif', color: '#333' }}>
+          <div className="p-10 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl leading-relaxed text-white" style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
               "一个不会画画的心理学爱好者，不是一个好厨子。"
             </p>
           </div>
