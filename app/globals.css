@@ -36,8 +36,8 @@
   --color-light-sage: var(--morandi-light-sage);
   --color-light-rose: var(--morandi-light-rose);
   --color-light-blue: var(--morandi-light-blue);
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
 }
 
 * {
