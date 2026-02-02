@@ -1,21 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "MySpace - 心理学、美食与运动的个人空间",
@@ -30,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body
-        className={`${inter.variable} ${merriweather.variable} antialiased`}
-      >
+      <body className="antialiased">
         <Header />
         <main className="min-h-screen pt-16 md:pt-20">
           {children}
