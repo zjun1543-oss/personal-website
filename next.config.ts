@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // 移除静态导出，支持 API 路由
   images: {
     unoptimized: true,
   },
