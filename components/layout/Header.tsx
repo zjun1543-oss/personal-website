@@ -9,6 +9,7 @@ const navItems = [
   { name: '心理学', href: '/psychology' },
   { name: '美食', href: '/food' },
   { name: '运动', href: '/sports' },
+  { name: 'AI搭子', href: '/ai-assistant' },
 ];
 
 export default function Header() {
